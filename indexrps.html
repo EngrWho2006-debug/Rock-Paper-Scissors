@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="buttons">
+            <button onclick="play('Rock')">🪨 Rock</button>
+            <button onclick="play('Paper')">📄 Paper</button>
+            <button onclick="play('Scissors')">✂️ Scissors</button>
+        </div>
+
+        <p id="user"></p>
+        <p id="computer"></p>
+        <h2 id="result"></h2>
+
+
+        <h3>Round: <span id="round">0</span></h3>
+
+        <div class="scoreboard">
+            <h3>Wins: <span id="wins">0</span></h3>
+            <h3>Losses: <span id="losses">0</span></h3>
+            <h3>Draws: <span id="draws">0</span></h3>
+        </div>
+
+        <button onclick="resetScore()">Reset Score</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
